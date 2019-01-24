@@ -13,7 +13,7 @@ while True:
 	try:
 		host = str(next(ips))
 		s = socket.socket()
-		s.settimeout(0.1)
+		s.settimeout(0.2)
 		try:
 			s.connect((host, port))
 		except socket.error:
